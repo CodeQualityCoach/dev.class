@@ -1,23 +1,31 @@
 # dev.class
 
-by Thomas Ley
+Developer classes by Thomas Ley
 
 ---
 
 ## Purpose
 
-* Code Qualilty Coach
-* Clean Code
+* Code Qualilty Coaching
+* Clean Code Concepts
 * Design Pattern
+* Development Techniques
+* Architecture 
 
 ---
 
-# Lesson Duration
+## Duration
 
-* 45 Minutes Session
+### 45 Minutes Session with
 
 * 30 Minutes Theory
-* 15 Minutes Homework
+* 15 Minutes Exercise
 
 ---
+
+## Thomas Ley
+
+[@CleanCodeCoach](https://twitter.com/CleanCodeCoach)
+
+[Blog](https://code-quality-coach.blogspot.com/)
 
