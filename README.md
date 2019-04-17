@@ -10,3 +10,5 @@ A [dev.class](https://gitpitch.com/CodeQualityCoach/dev.class) is a 45 minute tr
 
 *[Planned]* **[Strategy Pattern](https://gitpitch.com/CodeQualityCoach/dev.class?p=pattern-strategy)** Strategy pattern and the use of strategies for your application. 
 
+*[Planned]* **[Testing Introduction](https://gitpitch.com/CodeQualityCoach/dev.class?p=testing-introduction)** Introduction into testing and designing testable applications. 
+
