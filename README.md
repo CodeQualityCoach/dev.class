@@ -6,7 +6,6 @@ A [dev.class](https://gitpitch.com/CodeQualityCoach/dev.class) is a 45 minute tr
 
 *[Preview]* **[Dependency Injection (DI)](https://gitpitch.com/CodeQualityCoach/dev.class?p=di)** Basic concepts of dependency injection
 
-*[Planned]* **[Null-Object Pattern](https://gitpitch.com/CodeQualityCoach/dev.class?p=pattern-nullobject)** Make use of the null object pattern and how to return values
-
 *[Planned]* **[Design Pattern "Strategy Edition"](https://gitpitch.com/CodeQualityCoach/dev.class?p=pattern-strategy)** Strategy based pattern and the use of different strategies for your application. 
 
+*[Planned]* **[Testing Introduction](https://gitpitch.com/CodeQualityCoach/dev.class?p=testing-introduction)** Introduction into testing and designing testable applications. 
