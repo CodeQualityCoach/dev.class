@@ -1,12 +1,12 @@
-# C# in 20 minutes
+## C# in 20 minutes
 
-## Dependency Injection
+### Dependency Injection
 
-By Thomas Ley
+###### By Thomas Ley
 
 ---
 
-# How to explain dependency injection to a 5-year old?
+## How to explain dependency injection to a 5-year old?
 
 * When you go and get things out of the refrigerator for yourself, you can cause problems. You might leave the door open, you might get something Mommy or Daddy doesn't want you to have. You might even be looking for something we don't even have or which has expired.
 
@@ -15,20 +15,20 @@ By Thomas Ley
 ###### StackOverflow (http://bit.ly/1mBlD78)
 
 ---
-
-# Without Dependency Injection
+## Without Dependency Injection
 
 
     MessageService service = new MessageService();
     service.Show("Hello World");
 
-# Refactoring to Interfaces
+---
+## Refactoring to Interfaces
 
     IMessageService service = new MessageService();
     service.Show("Hello World");
 
-
-# Inject Message Service
+---
+## Inject Message Service
 
     public MainWindow(IMessageService service)
     {
@@ -37,7 +37,8 @@ By Thomas Ley
 
     _messageService.Show("hello world");
 
-# And Create Injection Container
+---
+## And Create Injection Container
 
     // lets register all required components
     var containerBuilder = new ContainerBuiler();
@@ -51,7 +52,8 @@ By Thomas Ley
     var window = container.Resolve<MainWindow>();
     windows.Show();
 
-# Injection Methods
+---
+## Injection Methods
 
 * Constructor Injection
  * constructor parameter
@@ -62,7 +64,8 @@ By Thomas Ley
  * optional parameter
  * null-object pattern
 
-# You should know ...
+---
+## You should know ...
 
 * what Dependency Injection is
 * what a DI Container is
