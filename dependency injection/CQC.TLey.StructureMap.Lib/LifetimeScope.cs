@@ -20,6 +20,8 @@ namespace CQC.TLey.StructureMap.Lib
 
             var report = container.WhatDoIHave();
             Console.WriteLine(report);
+
+            container.AssertConfigurationIsValid();
         }
 
         [Test]
