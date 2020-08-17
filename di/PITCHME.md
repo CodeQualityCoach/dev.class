@@ -3,7 +3,7 @@
 ---
 
 @snap[west span-40 text-08]
-![Story of Dependency Injection](2019-08-06_Comic_The-Story-Of-DI_pt00.jpeg)
+![Story of Dependency Injection](di/2019-08-06_Comic_The-Story-Of-DI_pt00.jpeg)
 @snapend
 
 @snap[east span-40 text-08]
@@ -12,7 +12,7 @@ When you go and get things out of the refrigerator for yourself, you can cause p
 ---
 
 @snap[west span-40 text-08]
-![Story of Dependency Injection](2019-08-06_Comic_The-Story-Of-DI_pt00.jpeg)
+![Story of Dependency Injection](di/2019-08-06_Comic_The-Story-Of-DI_pt00.jpeg)
 @snapend
 
 @snap[east span-40 text-08]
