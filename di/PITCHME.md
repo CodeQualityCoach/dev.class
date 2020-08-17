@@ -1,9 +1,5 @@
-# C# in 20 minutes
-
-## Dependency Injection
-
-###### By Thomas Ley
-
+# Dependency Injection
+	
 ---
 
 @snap[west span-40 text-08]
@@ -17,6 +13,8 @@
 @ulend
 
 @snapend
+
+---
 
 ## How to explain dependency injection to a 5-year old?
 
