@@ -1,4 +1,5 @@
-﻿using CQC.TLey.StructureMap.Lib.Impl;
+﻿using System;
+using CQC.TLey.StructureMap.Lib.Impl;
 using CQC.TLey.StructureMap.Lib.Interface;
 using FluentAssertions;
 using NUnit.Framework;
@@ -16,7 +17,11 @@ namespace CQC.TLey.StructureMap.Lib
                 c.For<IEgovHttpClient>().Use<EgovHttpClient>().Transient());
 
             container.GetInstance<IEgovHttpClient>().Should().BeAssignableTo<EgovHttpClient>();
+
+            var report = container.WhatDoIHave();
+            Console.WriteLine(report);
         }
+
         [Test]
         public void Test2()
         {
