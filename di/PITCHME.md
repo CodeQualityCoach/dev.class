@@ -1,5 +1,4 @@
 # Dependency Injection
-	
 ---
 
 @snap[west span-40 text-08]
@@ -7,23 +6,29 @@
 @snapend
 
 @snap[east span-40 text-08]
-When you go and get things out of the refrigerator for yourself, you can cause problems. You might leave the door open, you might get something Mommy or Daddy doesn't want you to have. You might even be looking for something we don't even have or which has expired.
+"When you go and get things out of the refrigerator for yourself, you can cause problems. You might leave the door open, you might get something Mommy or Daddy doesn't want you to have. You might even be looking for something we don't even have or which has expired." ~[StackOverflow](http://bit.ly/1mBlD78)
 @snapend
----
++++
 
 @snap[west span-40 text-08]
 ![Story of Dependency Injection](di/2019-08-06_Comic_The-Story-Of-DI_pt00.jpeg)
 @snapend
 
 @snap[east span-40 text-08]
-What you should be doing is stating a need, "I need something to drink with lunch," and then we will make sure you have something [proper] when you sit down to eat.
+What you should be doing is stating a need, "I need something to drink with lunch," and then we will make sure you have something [proper] when you sit down to eat. ~[StackOverflow](http://bit.ly/1mBlD78)
 @snapend
-
 ---
 
-## How to explain dependency injection to a 5-year old?
+@snap[west span-40 text-08]
+![Story of Dependency Injection](di/2019-08-06_Comic_The-Story-Of-DI_pt01.jpeg)
+@snapend
 
- StackOverflow (http://bit.ly/1mBlD78)
+@snap[east span-40 text-08]
+
+@snapend
+---
+
+
 
 
 
