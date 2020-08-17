@@ -48,25 +48,25 @@ What you should be doing is stating a need, "I need something to drink with lunc
 +++
 
 @title[Without Dependency Injection]
-@snap[west span-60 text-08]
+@snap[west span-80 text-08]
     MessageService service = new MessageService();
     service.Show("Hello World");
 @snapend
 
-@snap[east span-40 text-08]
+@snap[east span-20 text-08]
 @snapend
 +++
 
 @title[Refactoring to Interfaces]
-@snap[west span-60 text-08]
+@snap[west span-80 text-08]
     IMessageService service = new MessageService();
     service.Show("Hello World");@snapend
-@snap[east span-40 text-08]
+@snap[east span-20 text-08]
 @snapend
 +++
 
 @title[Inject Message Service]
-@snap[west span-60 text-08]
+@snap[west span-80 text-08]
     public MainWindow(IMessageService service)
     {
         _messageService = service;
@@ -75,7 +75,7 @@ What you should be doing is stating a need, "I need something to drink with lunc
     _messageService.Show("hello world");
 @snapend
 
-@snap[east span-40 text-08]
+@snap[east span-20 text-08]
 @snapend
 ---
 
@@ -134,7 +134,7 @@ What you should be doing is stating a need, "I need something to drink with lunc
 +++
 
 @title[Injection Methods]
-@snap[west span-60 text-08]
+@snap[west span-80 text-08]
 @ul
 - Constructor Injection
  	- constructor parameter
@@ -150,7 +150,7 @@ What you should be doing is stating a need, "I need something to drink with lunc
 @ulend
 @snapend
 
-@snap[east span-40 text-08]
+@snap[east span-20 text-08]
 @snapend
 ---
 
@@ -173,8 +173,7 @@ What you should be doing is stating a need, "I need something to drink with lunc
 +++
 
 @title[Create Injection Container]
-@snap[west span-40 text-08]
-
+@snap[west span-80 text-08]
     // lets register all required components
     var containerBuilder = new ContainerBuiler();
     containerBuilder.Register<IMessageService, MessageService>();
@@ -186,10 +185,9 @@ What you should be doing is stating a need, "I need something to drink with lunc
     // lets get the window
     var window = container.Resolve<MainWindow>();
     windows.Show();
-
 @snapend
 
-@snap[east span-40 text-08]
+@snap[east span-20 text-08]
 @snapend
 +++
 
