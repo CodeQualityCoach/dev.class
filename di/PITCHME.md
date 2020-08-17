@@ -45,6 +45,42 @@ What you should be doing is stating a need, "I need something to drink with lunc
 
 @snap[east span-40 text-08]
 @snapend
++++
+
+@title[Without Dependency Injection]
+@snap[west span-40 text-08]
+@snapend
+
+@snap[east span-40 text-08]
+    MessageService service = new MessageService();
+    service.Show("Hello World");
+@snapend
++++
+
+@title[Refactoring to Interfaces]
+@snap[west span-40 text-08]
+
+    IMessageService service = new MessageService();
+    service.Show("Hello World");@snapend
+
+@snap[east span-40 text-08]
+@snapend
++++
+
+@title[Inject Message Service]
+@snap[west span-40 text-08]
+
+    public MainWindow(IMessageService service)
+    {
+        _messageService = service;
+    }
+
+    _messageService.Show("hello world");
+
+@snapend
+
+@snap[east span-40 text-08]
+@snapend
 ---
 
 @title[Let is Run for...]
@@ -99,6 +135,27 @@ What you should be doing is stating a need, "I need something to drink with lunc
 
 @snap[east span-40 text-08]
 @snapend
++++
+
+@title[Injection Methods]
+@snap[west span-40 text-08]
+@ul
+- Constructor Injection
+ 	- constructor parameter
+ 	- required dependencies
+
+- Property Injection
+ 	- property setter
+ 	- optional parameter
+
+- Method Injection
+	- method parameter
+	- "it depends"/dynamic parameter
+@ulend
+@snapend
+
+@snap[east span-40 text-08]
+@snapend
 ---
 
 @title[The Bauhaus]
@@ -117,7 +174,28 @@ What you should be doing is stating a need, "I need something to drink with lunc
 
 @snap[east span-40 text-08]
 @snapend
----
++++
+
+@title[Create Injection Container]
+@snap[west span-40 text-08]
+
+    // lets register all required components
+    var containerBuilder = new ContainerBuiler();
+    containerBuilder.Register<IMessageService, MessageService>();
+    containerBuilder.Register<MainWindow, MainWindow>();
+    
+    // lets create the container
+    var container = containerBuilder.Build();
+
+    // lets get the window
+    var window = container.Resolve<MainWindow>();
+    windows.Show();
+
+@snapend
+
+@snap[east span-40 text-08]
+@snapend
++++
 
 @title[When I'm Gone]
 @snap[west span-40 text-08]
@@ -227,80 +305,3 @@ What you should be doing is stating a need, "I need something to drink with lunc
 @snapend
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-## Without Dependency Injection
-
-
-    MessageService service = new MessageService();
-    service.Show("Hello World");
-
----
-## Refactoring to Interfaces
-
-    IMessageService service = new MessageService();
-    service.Show("Hello World");
-
----
-## Inject Message Service
-
-    public MainWindow(IMessageService service)
-    {
-        _messageService = service;
-    }
-
-    _messageService.Show("hello world");
-
----
-## And Create Injection Container
-
-    // lets register all required components
-    var containerBuilder = new ContainerBuiler();
-    containerBuilder.Register<IMessageService, MessageService>();
-    containerBuilder.Register<MainWindow, MainWindow>();
-    
-    // lets create the container
-    var container = containerBuilder.Build();
-
-    // lets get the window
-    var window = container.Resolve<MainWindow>();
-    windows.Show();
-
----
-## Injection Methods
-
-* Constructor Injection
- * constructor parameter
- * required dependencies
-
-* Property Injection
- * properties/setter
- * optional parameter
- * null-object pattern
-
----
-## You should know ...
-
-* what Dependency Injection is
-* what a DI Container is
-* what the difference between 
- * Constructor Injection and 
- * Property Injection is
-* what inversion of control means
-* when to use Dependency Injection
