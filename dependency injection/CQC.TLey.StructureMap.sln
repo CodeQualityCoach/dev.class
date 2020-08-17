@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQC.TLey.StructureMap.Lib", "CQC.TLey.StructureMap.Lib\CQC.TLey.StructureMap.Lib.csproj", "{15A81E42-1FB4-461E-8ADE-3A27F1924343}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQC.TLey.StructureMapMvc", "CQC.TLey.StructureMapMvc\CQC.TLey.StructureMapMvc.csproj", "{593DD0B4-D9E8-4719-9B5A-852A71B7F30C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{15A81E42-1FB4-461E-8ADE-3A27F1924343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A81E42-1FB4-461E-8ADE-3A27F1924343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A81E42-1FB4-461E-8ADE-3A27F1924343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593DD0B4-D9E8-4719-9B5A-852A71B7F30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593DD0B4-D9E8-4719-9B5A-852A71B7F30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593DD0B4-D9E8-4719-9B5A-852A71B7F30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593DD0B4-D9E8-4719-9B5A-852A71B7F30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
