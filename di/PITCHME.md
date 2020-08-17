@@ -48,35 +48,31 @@ What you should be doing is stating a need, "I need something to drink with lunc
 +++
 
 @title[Without Dependency Injection]
-@snap[west span-40 text-08]
+@snap[west span-60 text-08]
+    MessageService service = new MessageService();
+    service.Show("Hello World");
 @snapend
 
 @snap[east span-40 text-08]
-    MessageService service = new MessageService();
-    service.Show("Hello World");
 @snapend
 +++
 
 @title[Refactoring to Interfaces]
-@snap[west span-40 text-08]
-
+@snap[west span-60 text-08]
     IMessageService service = new MessageService();
     service.Show("Hello World");@snapend
-
 @snap[east span-40 text-08]
 @snapend
 +++
 
 @title[Inject Message Service]
-@snap[west span-40 text-08]
-
+@snap[west span-60 text-08]
     public MainWindow(IMessageService service)
     {
         _messageService = service;
     }
 
     _messageService.Show("hello world");
-
 @snapend
 
 @snap[east span-40 text-08]
@@ -138,7 +134,7 @@ What you should be doing is stating a need, "I need something to drink with lunc
 +++
 
 @title[Injection Methods]
-@snap[west span-40 text-08]
+@snap[west span-60 text-08]
 @ul
 - Constructor Injection
  	- constructor parameter
