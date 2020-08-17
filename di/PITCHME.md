@@ -189,7 +189,7 @@ What you should be doing is stating a need, "I need something to drink with lunc
 
 @snap[east span-20 text-08]
 @snapend
-+++
+---
 
 @title[When I'm Gone]
 @snap[west span-40 text-08]
