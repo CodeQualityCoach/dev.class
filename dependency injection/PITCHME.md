@@ -1,6 +1,6 @@
-## C# in 20 minutes
+# C# in 20 minutes
 
-### Dependency Injection
+## Dependency Injection
 
 ###### By Thomas Ley
 
