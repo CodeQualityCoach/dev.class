@@ -14,8 +14,6 @@
 // limitations under the License.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-
-
 using StructureMap;
 
 namespace CQC.TLey.StructureMapMvc.DependencyResolution {

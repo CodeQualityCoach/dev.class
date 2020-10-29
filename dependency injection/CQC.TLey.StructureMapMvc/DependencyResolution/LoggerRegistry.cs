@@ -1,6 +1,6 @@
 using CQC.TLey.StructureMap.Lib.Impl;
 using CQC.TLey.StructureMap.Lib.Interface;
-using StructureMap.Configuration.DSL;
+using StructureMap;
 
 namespace CQC.TLey.StructureMapMvc.DependencyResolution
 {
@@ -11,4 +11,10 @@ namespace CQC.TLey.StructureMapMvc.DependencyResolution
             For<IEgovLogger>().Use<EgovLogger>();
         }
     }
+
+    public class OnlineRegistry
+    {
+
+    }
+    public class OnPremise {}
 }
